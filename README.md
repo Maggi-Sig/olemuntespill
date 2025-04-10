@@ -1,2 +1,2 @@
-# olemuntespill
-det vellkjente spillet til ole munte
+# Olemuntespill
+Det vellkjente spillet til Ole munte
