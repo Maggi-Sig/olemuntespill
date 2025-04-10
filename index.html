@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50/50 Beslutning</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        img {
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        button {
+            font-size: 24px;
+            padding: 15px 30px;
+            cursor: pointer;
+        }
+        p {
+            font-size: 48px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <img src="image.png" alt="Portrett">
+    <button onclick="giBeslutning()">Trykk her</button>
+    <p id="melding"></p>
+
+    <script>
+        function giBeslutning() {
+            let melding = Math.random() < 0.5 ? "Vi kan dra hjem" : "Fortsett og jobb med matte";
+            document.getElementById("melding").innerText = melding;
+        }
+    </script>
+</body>
+</html>
